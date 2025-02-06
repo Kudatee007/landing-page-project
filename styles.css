@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+a {
+  text-decoration: none;
+}
+/* Reusable classes */
+.flex {
+  display: flex;
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-around {
+  justify-content: space-around;
+}
+.btn {
+    background-color: #4CAF4F;
+    padding: 11px 25px;
+    border: 0;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+/* Font Size Classes */
+.txt-sm {
+  font-size: 14px;
+}
+
+.txt-md {
+  font-size: 16px;
+}
+
+.txt-lg {
+  font-size: 20px;
+}
+
+.txt-xl {
+  font-size: 28px;
+}
+
+.txt-xxl {
+  font-size: 36px;
+}
+
+.txt-xxx {
+  font-size: 64px;
+  letter-spacing: 2px;
+}
+/* Text Color Classes */
+.txt-primary {
+  color: #717171; 
+}
+
+.txt-secondary {
+  color: #4D4D4D;
+}
+
+.txt-green {
+  color: #4CAF4F;
+}
+
+.txt-white {
+  color: #FFFFFF;
+}
+
+.txt-dark {
+  color: #18191F;
+}
+.txt-silver {
+    color: #F5F7FA;
+}
+.txt-silver {
+    color: #D9DBE1;
+}
+.bg-green {
+    background-color: #4CAF4F;
+}
+/* Padding Utilities */
+.pb-1 { padding-bottom: 4px }
+.pb-2 { padding-bottom: 8px; }
+.pb-3 { padding-bottom: 16px; }
+.pb-4 { padding-bottom: 32px; }
+
+
+.top-bar {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: -50px;
+  margin-right: -50px;
+}
+.nav-links {
+  gap: 40px;
+}
+.nav-auth {
+  gap: 15px;
+}
+.hero-content {
+    min-height: 90vh;
+    gap: 0px;
+}

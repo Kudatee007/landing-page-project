@@ -4,46 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nexcent landing page</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <!-- header section -->
     <header>
-      <section class="top-bar">
+      <section class="top-bar flex space-between">
         <a href="#"><img src="./assets/images/Logo.svg" alt="Logo" /></a>
         <!-- nav links -->
-        <nav>
-          <a href="#">Home</a>
-          <a href="#">Service</a>
-          <a href="#">Feature</a>
-          <a href="#">Product</a>
-          <a href="#">Testimonials</a>
-          <a href="#">FAQ</a>
+        <nav class="flex space-between nav-links">
+          <a href="#" class="txt-md txt-primary">Home</a>
+          <a href="#" class="txt-md txt-primary">Service</a>
+          <a href="#" class="txt-md txt-primary">Feature</a>
+          <a href="#" class="txt-md txt-primary">Product</a>
+          <a href="#" class="txt-md txt-primary">Testimonials</a>
+          <a href="#" class="txt-md txt-primary">FAQ</a>
         </nav>
         <!-- login and sign up btn -->
-        <div>
-          <a href="#">Login</a>
-          <button>Sign Up</button>
+        <div class="flex space-between nav-auth">
+          <a href="#" class="txt-sm txt-green">Login</a>
+          <button class="txt-sm btn">Sign Up</button>
         </div>
       </section>
       <!-- hero section -->
-      <section class="hero-content">
-        <section>
+      <section class="hero-content flex space-between">
           <div>
-            <h1>Lessons and insights<br /><span>from 8 years</span></h1>
-            <p>
+            <h1 class="txt-xxx txt-secondary pb-3">Lessons and insights<br /><span class="txt-green">from 8 years</span></h1>
+            <p class="txt-md txt-primary pb-4">
               Where to grow your business as a photographer: site or social
               media?
             </p>
-            <button>Register</button>
+            <button class="btn txt-md">Register</button>
           </div>
           <div>
             <img
               src="./assets/images/Illustration.svg"
               alt="illustration image"
             />
-            <img src="./assets/images/Illustration.svg" alt="illustration image" />
           </div>
-        </section>
       </section>
     </header>
 <!-- main section -->
