@@ -72,9 +72,6 @@ a {
 .txt-silver {
   color: #f5f7fa;
 }
-.txt-silver {
-  color: #d9dbe1;
-}
 .bg-green {
   background-color: #4caf4f;
 }
@@ -247,4 +244,33 @@ a {
 }
 .demo-section {
   text-align: center;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+/* .footer-brand {
+    max-width: 300px;
+  } */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+
+}
+.footer-nav {
+    display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.social-icons {
+    gap: 10px;
+  }
+.input-email {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
 }
