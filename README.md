@@ -24,6 +24,8 @@ The landing page is built using **HTML5** and follows best practices in **semant
 - assets/images
 - README.md
 - .gitignore
+- styles/
+- styles.css
 
 ## Live Demo
 
