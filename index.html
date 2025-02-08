@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nexcent landing page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body>
     <!-- header section -->
@@ -25,8 +25,9 @@
           <a href="#" class="txt-sm txt-green">Login</a>
           <button class="txt-sm btn">Sign Up</button>
         </div>
-        <div class="dropdown_menu open">
-          <nav class="dropdown_links flex">
+        <!-- dropdown menu -->
+        <div class="dropdown-menu">
+          <nav class="dropdown-links flex">
             <a href="#" class="txt-md txt-primary">Home</a>
             <a href="#" class="txt-md txt-primary">Service</a>
             <a href="#" class="txt-md txt-primary">Feature</a>
@@ -34,18 +35,19 @@
             <a href="#" class="txt-md txt-primary">Testimonials</a>
             <a href="#" class="txt-md txt-primary">FAQ</a>
             <a href="#" class="txt-sm txt-green">Login</a>
-            <button class="txt-sm btn action_btn">Sign Up</button>
+            <button class="txt-sm btn action-btn">Sign Up</button>
           </nav>
         </div>
-        <div class="toggle_btn">
-          <img src="./assets//images/hamburger.svg" alt="" onclick="">
+        <!-- hamburger btn -->
+        <div class="toggle-btn">
+          <img src="./assets//images/hamburger.svg" alt="Menu Toggle">
         </div>
       </section>
       <!-- hero section -->
       <section class="hero-content flex space-between">
           <div>
-            <h1 class="txt-xxx txt-secondary pb-3">Lessons and insights<br /><span class="txt-green">from 8 years</span></h1>
-            <p class="txt-md txt-primary pb-4">
+            <h1 class="txt-xxx txt-secondary pt-md">Lessons and insights<br /><span class="txt-green">from 8 years</span></h1>
+            <p class="txt-md txt-primary pt-lg pb-lg">
               Where to grow your business as a photographer: site or social
               media?
             </p>
@@ -62,11 +64,11 @@
     </header>
 <!-- main section -->
     <main>
-      <section class="clients-section pt-5 bg-white pl-pr">
-        <h2 class="txt-xxl txt-secondary pb-2">Our Clients</h2>
-        <p class="txt-md txt-primary pb-4">We have been working with some Fortune 500+ clients</p>
+      <section class="clients-section pt-xl bg-white pl-pr">
+        <h2 class="txt-xxl txt-secondary pb-sm">Our Clients</h2>
+        <p class="txt-md txt-primary pb-lg">We have been working with some Fortune 500+ clients</p>
         <!-- logos -->
-        <div class="clients-logo-box pb-4 grid">
+        <div class="clients-logo-box pb-lg grid">
           <img src="./assets/images/Logo1.svg" alt="Logo 1" class="client-logo"/>
           <img src="./assets/images/Logo2.svg" alt="Logo 2" class="client-logo"/>
           <img src="./assets/images/Logo3.svg" alt="Logo 3" class="client-logo"/>
@@ -76,29 +78,29 @@
           <img src="./assets/images/Logo7.svg" alt="Logo 7" class="client-logo"/>
         </div>
       </section>
-      <section class="members-section pt-5 bg-white pl-pr pb-5">
-        <h2 class="txt-xxl txt-secondary pb-3">Manage your entire community <br> a single system</h2>
-        <p class="txt-md txt-primary pb-4">Who is Nextcent suitable for?</p>
+      <section class="members-section pt-xl bg-white pl-pr pb-xl">
+        <h2 class="txt-xxl txt-secondary pb-md">Manage your entire community <br> a single system</h2>
+        <p class="txt-md txt-primary pb-lg">Who is Nextcent suitable for?</p>
         <div class="members-box grid">
           <section>
-            <img src="./assets/images/memberIcon.svg" alt="member icon" class="pb-3 icon"/>
-            <h3 class="txt-xl txt-secondary pb-2">Membership <br> Organisations</h3>
+            <img src="./assets/images/memberIcon.svg" alt="member icon" class="pb-md icon"/>
+            <h3 class="txt-xl txt-secondary pb-sm">Membership <br> Organisations</h3>
             <p class="txt-sm txt-primary">
               Our membership management software provides full automation of
               membership renewals and payments
             </p>
           </section>
           <section>
-            <img src="./assets/images/nationIcon.svg" alt="nation icon" class="pb-3 icon"/>
-            <h3 class="txt-xl txt-secondary pb-2">National <br> Associations</h3>
+            <img src="./assets/images/nationIcon.svg" alt="nation icon" class="pb-md icon"/>
+            <h3 class="txt-xl txt-secondary pb-sm">National <br> Associations</h3>
             <p class="txt-sm txt-primary">
               Our membership management software provides full automation of
               membership renewals and payments
             </p>
           </section>
-          <section class="">
-            <img src="./assets/images/clubIcon.svg" alt="club icon" class="pb-3 icon"/>
-            <h3 class="txt-xl txt-secondary pb-2">Clubs And <br> Groups</h3>
+          <section>
+            <img src="./assets/images/clubIcon.svg" alt="club icon" class="pb-md icon"/>
+            <h3 class="txt-xl txt-secondary pb-sm">Clubs And <br> Groups</h3>
             <p class="txt-sm txt-primary">
               Our membership management software provides full automation of
               membership renewals and payments
@@ -106,11 +108,11 @@
           </section>
         </div>
       </section>
-        <section class="learn-more-section flex space-between pt-4 pb-4 bg-grey pl-pr">
+        <section class="learn-more-section flex space-between pt-lg pb-lg bg-grey pl-pr">
           <img src="./assets/images/unseendesktop.svg" alt="Pixelgrade mobile" class="pixel-img"/>
           <section>
-            <h2 class="txt-xxl txt-secondary pb-3">The unseen of spending three years at Pixelgrade</h2>
-            <p class="txt-sm txt-primary pb-4">
+            <h2 class="txt-xxl txt-secondary pb-md">The unseen of spending three years at Pixelgrade</h2>
+            <p class="txt-sm txt-primary pb-lg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
               amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
               Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
@@ -121,9 +123,9 @@
             <button class="btn txt-sm">Learn more</button>
           </section>
         </section>
-        <section class="stats-section flex space-around pt-5 pb-5 bg-grey pl-pr">
+        <section class="stats-section flex space-around pt-xl pb-xl bg-grey pl-pr">
           <section class="stats-title">
-            <h3 class="txt-xxl txt-secondary pb-2">Helping a local<br /><span class="txt-green">business reinvent itself</span></h3>
+            <h3 class="txt-xxl txt-secondary pb-sm">Helping a local<br /><span class="txt-green">business reinvent itself</span></h3>
             <p class="txt-md txt-primary">We reached here with our hard work and dedication</p>
           </section>
             <div class="stats-grid grid">
@@ -157,11 +159,11 @@
               </div>
             </div>
         </section>
-        <section class="learn-more-section flex space-between pt-5 pb-5 bg-grey pl-pr">
+        <section class="learn-more-section flex space-between pt-xl pb-xl bg-grey pl-pr">
           <img src="./assets/images/pana.svg" alt="phone img" class="pixel-img"/>
           <section>
-            <h2 class="txt-xxl txt-secondary pb-3">How to design your site footer like we did</h2>
-            <p class="txt-sm txt-primary pb-4">
+            <h2 class="txt-xxl txt-secondary pb-md">How to design your site footer like we did</h2>
+            <p class="txt-sm txt-primary pb-lg">
               Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
               augue nec tincidunt molestie, massa nunc varius arcu, at
               scelerisque elit erat a magna. Donec quis erat at libero ultrices
@@ -175,10 +177,10 @@
             <button class="btn txt-sm">Learn More</button>
           </section>
         </section>
-        <section class="testimonial-section flex pt-5 pb-5 bg-grey pl-pr">
+        <section class="testimonial-section flex pt-xl pb-lg bg-grey pl-pr">
           <img src="./assets/images/image9.svg" alt="dark img" class="testimonial-img"/>
         <div>
-          <p class="txt-md txt-primary pb-2">  Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+          <p class="txt-md txt-primary pb-sm">  Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
             lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
             enim metus. Vivamus sed libero ornare, tristique quam in, gravida
             enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit
@@ -189,8 +191,8 @@
             Quisque vulputate odio neque, eget efficitur libero condimentum id.
             Curabitur id nibh id sem dignissim finibus ac sit amet magna.
           </p>
-          <p class="txt-lg txt-green pb-2">Tim Smith</p>
-          <p class="txt-md txt-primary pb-4">British Dragon Boat Racing Association</p>
+          <p class="txt-lg txt-green pb-sm">Tim Smith</p>
+          <p class="txt-md txt-primary pb-lg">British Dragon Boat Racing Association</p>
           <div class="testimonial-logos flex space-between">
             <img src="./assets/images/Logo11.svg" alt="icon 1" class="icon"/>
             <img src="./assets/images/Logo2.svg" alt="icon 2" class="icon"/>
@@ -207,19 +209,19 @@
           </div>
         </div>
         </section>
-        <section class="blog-section pt-5 bg-grey pl-pr">
-          <h2 class="txt-xxl txt-secondary pb-2">Caring is the new marketing</h2>
+        <section class="blog-section pt-xl bg-grey pl-pr">
+          <h2 class="txt-xxl txt-secondary pb-sm">Caring is the new marketing</h2>
           <p class="txt-md txt-primary blog-txt">
             The Nexcent blog is the best place to read about the latest
             membership insights, trends and more. See who's joining the
             community, read about how our community are increasing their
             membership income and lot's more.
           </p>
-          <div class="blog-grid grid space-between pt-5 pb-5">
+          <div class="blog-grid grid space-between pt-xl pb-xl">
             <div class="blog-card">
               <img src="./assets/images/image18.svg" alt="laptop img" class="blog-img"/>
               <div class="blog-content">
-                <p class="txt-lg txt-primary pb-2">Creating Streamlined Safeguarding Processes with OneRen</p>
+                <p class="txt-lg txt-primary pt-sm">Creating Streamlined Safeguarding Processes with OneRen</p>
                 <div class="more-wrapper flex">
                   <p class="txt-md txt-green">
                     Readmore
@@ -231,7 +233,7 @@
             <div class="blog-card">
               <img src="./assets/images/image19.svg" alt="laptop img" class="blog-img"/>
               <div class="blog-content">
-                <p class="txt-lg txt-primary pb-2">
+                <p class="txt-lg txt-primary pt-sm">
                   What are your safeguarding responsibilities and how can you
                   manage them?
                 </p>
@@ -246,7 +248,7 @@
             <div class="blog-card">
               <img src="./assets/images/image20.svg" alt="lady with laptop" class="blog-img"/>
               <div class="blog-content">
-                <p class="txt-lg txt-primary pb-2">Revamping the Membership Model with Triathlon Australia</p>
+                <p class="txt-lg txt-primary pt-sm">Revamping the Membership Model with Triathlon Australia</p>
                 <div class="more-wrapper flex">
                   <p class="txt-md txt-green">
                     Readmore
@@ -258,27 +260,27 @@
           </div>
         </section>
         <div class="bg-white white-space"></div>
-        <section class="demo-section bg-grey pl-pr pb-4 pt-4">
-          <h2 class="txt-xxx txt-secondary pb-3">Pellentesque suscipit <br> fringilla libero eu.</h2>
-          <button class="btn"> Get a Demo <img src="./assets/images/Rightlight.svg" alt="right arrow" /></button>    
+        <section class="demo-section bg-grey pl-pr pt-lg pb-lg">
+          <h2 class="txt-xxx txt-secondary pt-md">Pellentesque suscipit <br> fringilla libero eu.</h2>
+          <button class="btn"> Get a Demo</button>    
         </section>
     </main>
     <!-- footer -->
-     <footer class="footer bg-black pl-pr pt-5 pb-5">
+     <footer class="footer bg-black pl-pr pt-xl pb-xl">
         <section class="footer-brand">
-            <img src="./assets/images/footerLogo.svg" alt="footer logo" class="pb-3">
-            <p class="txt-sm txt-silver pb-2">Copyright &#169 2020 Nexcent ltd.</p>
+            <img src="./assets/images/footerLogo.svg" alt="footer logo" class="pb-md">
+            <p class="txt-sm txt-silver pt-sm">Copyright &#169 2020 Nexcent ltd.</p>
             <p class="txt-sm txt-silver">All rights reserved</p>
-            <div class="social-icons flex pt-4">
-                <img src="./assets/images/insta.svg" alt="instagram icon">
-                <img src="./assets/images/Soc.svg" alt="social icon">
-                <img src="./assets/images/twitter.svg" alt="twitter icon">
-                <img src="./assets/images/youtube.svg" alt="youtube icon">
+            <div class="social-icons flex pt-lg">
+                <img src="./assets/images/insta.svg" alt="Follow us on Instagram">
+                <img src="./assets/images/Soc.svg" alt="Follow us on Social">
+                <img src="./assets/images/twitter.svg" alt="Follow us on Twitter">
+                <img src="./assets/images/youtube.svg" alt="Follow us on Youtube">
             </div>
           </section>
           <div class="footer-links">
         <section>
-            <h3 class="txt-lg txt-white pb-3">Company</h3>
+            <h3 class="txt-lg txt-white pb-md">Company</h3>
             <!-- links -->
             <nav class="footer-nav">
                 <a href="#" class="txt-sm txt-silver">About us</a>
@@ -289,7 +291,7 @@
             </nav>
         </section>
         <section>
-            <h3 class="txt-lg txt-white pb-3">Support</h3>
+            <h3 class="txt-lg txt-white pb-md">Support</h3>
                <!-- links -->
                <nav class="footer-nav">
                 <a href="#" class="txt-sm txt-silver">Help center</a>
@@ -300,10 +302,17 @@
             </nav>
         </section>
         <section>
-            <h3 class="txt-lg txt-white pb-3">Stay up to date</h3>
+            <h3 class="txt-lg txt-white pb-md">Stay up to date</h3>
            <input type="email" name="email" id="" placeholder="Your email adddress" class="input-email txt-sm txt-secondary">
         </section>
       </div>
      </footer>
+     <script>
+      const toggleBtn = document.querySelector(".toggle-btn")
+      const dropDownMenu = document.querySelector(".dropdown-menu")
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open")
+      }
+     </script>
   </body>
 </html>
