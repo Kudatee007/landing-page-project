@@ -10,6 +10,9 @@ a:hover {
   color: #4caf4f;
   cursor: pointer;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* Reusable classes */
 .flex {
   display: flex;
