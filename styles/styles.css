@@ -46,6 +46,9 @@ html {
 .btn:active {
   transform: scale(0.95);
 }
+.hamburger-btn {
+  width: 24px;
+}
 /* Font Size Classes */
 .txt-sm {
   font-size: 14px;
@@ -76,7 +79,27 @@ html {
   --text-light: #717171;
   --bg-light: #f5f7fa;
   --bg-dark: #262626;
-  --white-color: #ffffff;
+  --bg-white: #ffffff;
+  --txt-white: #ffffff;
+}
+/* .dark-theme {
+  --primary-color: #4caf4f;
+  --text-dark: white;
+  --text-sec: grey;
+  --text-light: smokewhite;
+  --bg-dark: #f5f7fa;
+  --bg-light: #262626;
+  --white-color: #2f2f2f;
+} */
+.dark-theme {
+  --primary-color: #4caf4f;
+  --text-dark: #ffffff;
+  --text-sec: #ffffff;
+  --text-light: #ddd7d7;
+  --bg-light: #18191f;
+  --bg-dark: #ffffff;
+  --bg-white: #18191f;
+  --txt-white: #18191f;
 }
 .txt-primary {
   color: var(--text-light);
@@ -88,7 +111,7 @@ html {
   color: var(--primary-color);
 }
 .txt-white {
-  color: var(--white-color);
+  color: var(--txt-white);
 }
 .txt-dark {
   color: var(--text-dark);
@@ -103,9 +126,9 @@ html {
   background-color: var(--bg-light);
 }
 .bg-white {
-  background-color: var(--white-color);
+  background-color: var(--bg-white);
 }
-.bg-black {
+.bg-dark {
   background-color: var(--bg-dark);
 }
 /* Padding Utilities */
@@ -131,6 +154,11 @@ html {
   padding-left: clamp(45px, 8vw, 120px);
   padding-right: clamp(45px, 8vw, 120px);
 }
+#icon {
+  width: 30px;
+  cursor: pointer;
+  padding-left: 10px;
+}
 /* Styling */
 .top-bar {
   position: relative;
@@ -138,6 +166,9 @@ html {
   padding-bottom: 30px;
   margin-left: clamp(-10px, -5vw, -50px);
   margin-right: clamp(-10px, -5vw, -50px);
+}
+.logo {
+  width: 160px;
 }
 /* dropdown menu */
 .dropdown-menu {
@@ -213,7 +244,6 @@ html {
   text-align: start;
   align-content: center;
   gap: clamp(20px, 2vw, 50px);
-  background-color: #f5f7fa;
 }
 .pixel-img {
   width: clamp(350px, 50vw, 5000px);
@@ -221,7 +251,6 @@ html {
 }
 .stats-section {
   text-align: start;
-  background-color: #f5f7fa;
   gap: 40px;
 }
 .stats-grid {
@@ -238,7 +267,6 @@ html {
 .testimonial-section {
   gap: clamp(30px, 4vw, 70px);
   text-align: start;
-  background-color: #f5f7fa;
 }
 .testimonial-logos {
   flex-wrap: wrap;
@@ -256,7 +284,6 @@ html {
 }
 .blog-section {
   text-align: center;
-  background-color: #f5f7fa;
 }
 .blog-grid {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -274,7 +301,6 @@ html {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  background-color: #ffffff;
   border: 0;
   width: 250px;
   padding: 14px 7px;
@@ -322,6 +348,17 @@ html {
   width: 250px;
   border: none;
   border-radius: 5px;
+}
+#scroll-top {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border-radius: 500px;
+  border: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
 }
 @media (max-width: 992px) {
   .nav-links,
