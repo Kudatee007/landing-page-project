@@ -358,6 +358,19 @@ html {
   bottom: 40px;
   right: 40px;
 }
+/* image animation */
+img:hover {
+  animation: shake 0.5s ease-in-out; /* Shorter and smoother */
+}
+
+@keyframes shake {
+  0% { transform: translate(2px, 2px) rotate(0deg); }
+  20% { transform: translate(-2px, -2px) rotate(-2deg); }
+  40% { transform: translate(-3px, 0px) rotate(2deg); }
+  60% { transform: translate(3px, 2px) rotate(0deg); }
+  80% { transform: translate(-2px, -2px) rotate(-2deg); }
+  100% { transform: translate(2px, 2px) rotate(0deg); }
+}
 @media (max-width: 992px) {
   .nav-links,
   .nav-auth {
