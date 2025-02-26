@@ -39,3 +39,69 @@ icon.onclick = function () {
     hamburgerBtn.src = "./assets/images/hamburger.svg";
   }
 };
+
+new Swiper('.swiper', {
+  loop: true,
+  spaceBetween: 30,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2
+    },
+    992: {
+      slidesPerView: 3
+    },
+  },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+new Swiper('.client-logo-box .swiper', {
+  loop: true,
+  spaceBetween: 30,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 3
+    },
+    768: {
+      slidesPerView: 4
+    },
+    992: {
+      slidesPerView: 5
+    },
+  },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});

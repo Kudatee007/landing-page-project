@@ -1,7 +1,10 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@100&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+    font-family: "Inter", serif;
 }
 a {
   text-decoration: none;
@@ -81,6 +84,7 @@ html {
   --bg-dark: #262626;
   --bg-white: #ffffff;
   --txt-white: #ffffff;
+  --swiper-navigation-color: #4caf4f;
 }
 /* .dark-theme {
   --primary-color: #4caf4f;
@@ -223,6 +227,7 @@ html {
   text-align: center;
 }
 .clients-logo-box {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 .client-logo {
@@ -284,13 +289,6 @@ html {
 }
 .blog-section {
   text-align: center;
-}
-.blog-grid {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  row-gap: 100px;
-  justify-content: center;
-  align-items: center;
 }
 .blog-card {
   position: relative;
@@ -359,6 +357,19 @@ html {
   position: fixed;
   bottom: 40px;
   right: 40px;
+}
+/* image animation */
+img:hover {
+  animation: shake 0.5s ease-in-out; /* Shorter and smoother */
+}
+
+@keyframes shake {
+  0% { transform: translate(2px, 2px) rotate(0deg); }
+  20% { transform: translate(-2px, -2px) rotate(-2deg); }
+  40% { transform: translate(-3px, 0px) rotate(2deg); }
+  60% { transform: translate(3px, 2px) rotate(0deg); }
+  80% { transform: translate(-2px, -2px) rotate(-2deg); }
+  100% { transform: translate(2px, 2px) rotate(0deg); }
 }
 @media (max-width: 992px) {
   .nav-links,
