@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nexcent landing page</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- linking swiperJS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- header section -->
@@ -90,7 +95,7 @@
           We have been working with some Fortune 500+ clients
         </p>
         <!-- logos -->
-        <div class="clients-logo-box pb-lg grid">
+        <div class="clients-logo-box pb-lg">
           <img
             src="./assets/images/Logo1.svg"
             alt="Logo 1"
@@ -328,56 +333,78 @@
           how our community are increasing their membership income and lot's
           more.
         </p>
-        <div class="blog-grid grid space-between pt-xl pb-xl">
-          <div class="blog-card">
-            <img
-              src="./assets/images/image18.svg"
-              alt="laptop img"
-              class="blog-img"
-            />
-            <div class="blog-content bg-white">
-              <p class="txt-lg txt-primary pt-sm">
-                Creating Streamlined Safeguarding Processes with OneRen
-              </p>
-              <div class="more-wrapper flex">
-                <p class="txt-md txt-green">Readmore</p>
-                <img src="./assets/images/Right.svg" alt="right arrow" />
+        <div class="swiper">
+            <div class="swiper-wrapper pt-xl pb-xl swiper-wrapper">
+            <div class="blog-card swiper-slide">
+              <img
+                src="./assets/images/image18.svg"
+                alt="laptop img"
+                class="blog-img"
+              />
+              <div class="blog-content bg-white">
+                <p class="txt-lg txt-primary pt-sm">
+                  Creating Streamlined Safeguarding Processes with OneRen
+                </p>
+                <div class="more-wrapper flex">
+                  <p class="txt-md txt-green">Readmore</p>
+                  <img src="./assets/images/Right.svg" alt="right arrow" />
+                </div>
+              </div>
+            </div>
+            <div class="blog-card swiper-slide">
+              <img
+                src="./assets/images/image19.svg"
+                alt="laptop img"
+                class="blog-img"
+              />
+              <div class="blog-content bg-white">
+                <p class="txt-lg txt-primary pt-sm">
+                  What are your safeguarding responsibilities and how can you
+                  manage them?
+                </p>
+                <div class="more-wrapper flex">
+                  <p class="txt-md txt-green">Readmore</p>
+                  <img src="./assets/images/Right.svg" alt="right arrow" />
+                </div>
+              </div>
+            </div>
+            <div class="blog-card swiper-slide">
+              <img
+                src="./assets/images/image20.svg"
+                alt="lady with laptop"
+                class="blog-img"
+              />
+              <div class="blog-content bg-white">
+                <p class="txt-lg txt-primary pt-sm">
+                  Revamping the Membership Model with Triathlon Australia
+                </p>
+                <div class="more-wrapper flex">
+                  <p class="txt-md txt-green">Readmore</p>
+                  <img src="./assets/images/Right.svg" alt="right arrow" />
+                </div>
+              </div>
+            </div>
+            <div class="blog-card swiper-slide">
+              <img
+                src="./assets/images/image19.svg"
+                alt="laptop img"
+                class="blog-img"
+              />
+              <div class="blog-content bg-white">
+                <p class="txt-lg txt-primary pt-sm">
+                  What are your safeguarding responsibilities and how can you
+                  manage them?
+                </p>
+                <div class="more-wrapper flex">
+                  <p class="txt-md txt-green">Readmore</p>
+                  <img src="./assets/images/Right.svg" alt="right arrow" />
+                </div>
               </div>
             </div>
           </div>
-          <div class="blog-card">
-            <img
-              src="./assets/images/image19.svg"
-              alt="laptop img"
-              class="blog-img"
-            />
-            <div class="blog-content bg-white">
-              <p class="txt-lg txt-primary pt-sm">
-                What are your safeguarding responsibilities and how can you
-                manage them?
-              </p>
-              <div class="more-wrapper flex">
-                <p class="txt-md txt-green">Readmore</p>
-                <img src="./assets/images/Right.svg" alt="right arrow" />
-              </div>
-            </div>
-          </div>
-          <div class="blog-card">
-            <img
-              src="./assets/images/image20.svg"
-              alt="lady with laptop"
-              class="blog-img"
-            />
-            <div class="blog-content bg-white">
-              <p class="txt-lg txt-primary pt-sm">
-                Revamping the Membership Model with Triathlon Australia
-              </p>
-              <div class="more-wrapper flex">
-                <p class="txt-md txt-green">Readmore</p>
-                <img src="./assets/images/Right.svg" alt="right arrow" />
-              </div>
-            </div>
-          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </article>
       <div class="bg-white white-space"></div>
@@ -445,6 +472,7 @@
         </section>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/script.js"></script>
   </body>
 </html>
